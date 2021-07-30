@@ -8,16 +8,18 @@ A question answering method for Event Extraction on your own Chinese dataset (Al
    pip install pytorch_pretrained_bert
    pip install numpy torch
    ```
-   download BERT-base-chinese model from https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz, vocab from             https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt.
+   Download BERT-base-chinese model from https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz, download bert-base-chinese-vocab from             https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt.
    Then put these file in ./Bert-base-chinese
+   ```
       --bert_config.json
       --pytorch_model.bin
       --vocab.txt
+    ```
    
 2. Prepare **Your own dataset**.
 
 **`sample.json`**
-```json
+```
 
 [
   {
@@ -52,14 +54,22 @@ A question answering method for Event Extraction on your own Chinese dataset (Al
 ]
 
 ```
-put the data into in ./data/train.json, ./data/dev.json, ./data/test.json.
+put the data into in 
+   ```
+      ./data/
+         train.json
+         dev.json
+         test.json
+    ```
 
 3. Add your trigger and argument category in the file ./const.py
 
 4. Design question templates based on your event trigger and argument in ./question.csv
-   for example ##事件类型,事件角色,设计的问题
-                冲突：冲击,攻击者,谁发起了这次攻击事件？
-
+  for example
+  ```
+      事件类型,事件角色,设计的问题
+      冲突：冲击,攻击者,谁发起了这次攻击事件？
+    ```
 
 ## Usage
 
