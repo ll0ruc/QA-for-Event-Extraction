@@ -1,0 +1,35 @@
+[
+  {
+    "words": "在冲突中，一名年轻的激进示威者用尖刀刺伤警员。",
+    "golden-event-mentions": [
+      {
+        "event_type": "冲突：冲击",
+        "trigger": {
+          "text": "刺伤",
+          "start": 18,
+          "end": 20
+        },
+        "arguments": [
+          {
+            "text": "警员",
+            "start": 20,
+            "end": 22,
+            "entity_type": "人物",
+            "role": "受害者"
+          },
+          {
+            "text": "激进示威者",
+            "start": 10,
+            "end": 15,
+            "entity_type": "人物",
+            "role": "攻击者"
+          }
+        ]
+      }
+    ]
+  },
+  ...
+  {
+  ...
+  }
+]
