@@ -8,7 +8,9 @@ A question answering method for Event Extraction on your own Chinese dataset (Al
    pip install pytorch_pretrained_bert
    pip install numpy torch
    ```
-   Download BERT-base-chinese model from https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz, download bert-base-chinese-vocab from             https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt.
+   Download BERT-base-chinese model from https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese.tar.gz 
+   
+   Download bert-base-chinese-vocab from https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-chinese-vocab.txt.
    
    Then put these file in 
    ```
