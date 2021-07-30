@@ -69,7 +69,7 @@ put the data into
 
 for example
 ```
-   事件类型,事件角色,设计的问题
+   ##事件类型,事件角色,设计的问题##
    冲突：冲击,攻击者,谁发起了这次攻击事件？
 ```
 
@@ -80,14 +80,14 @@ Run:
 ```bash
 sudo python qa-trigger.py
 ``` 
-- Then you can get the "trigger_model.pt" in main directory.
 - You can get Precision/Recall/F1 on event trigger extraction.
+- Then you can get the "trigger_model.pt" in main directory.
 
 ```bash
 sudo python qa-argument.py
 ``` 
-- Then you can get the "argument_model.pt" in main directory.
 - You can get Precision/Recall/F1 on event argument extraction.
+- Then you can get the "argument_model.pt" in main directory.
 
 
 ### Reference
