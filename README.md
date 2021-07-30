@@ -22,56 +22,56 @@ A question answering method for Event Extraction on your own Chinese dataset (Al
    
 2. Prepare **Your own dataset**.
 
-**`sample.json`**
-```
-[
-  {
-    "words": "在冲突中，一名年轻的激进示威者用尖刀刺伤警员。",
-    "golden-event-mentions": [
-      {
-        "event_type": "冲突：冲击",
-        "trigger": {
-          "text": "刺伤",
-          "start": 18,
-          "end": 20
-        },
-        "arguments": [
-          {
-            "text": "警员",
-            "start": 20,
-            "end": 22,
-            "entity_type": "人物",
-            "role": "受害者"
-          },
-          {
-            "text": "激进示威者",
-            "start": 10,
-            "end": 15,
-            "entity_type": "人物",
-            "role": "攻击者"
-          }
-        ]
-      }
-    ]
-  },
-]
-```
-put the data into
-```
-./data/
-   --train.json
-   --dev.json
-   --test.json
-```
+   **`sample.json`**
+   ```
+   [
+     {
+       "words": "在冲突中，一名年轻的激进示威者用尖刀刺伤警员。",
+       "golden-event-mentions": [
+         {
+           "event_type": "冲突：冲击",
+           "trigger": {
+             "text": "刺伤",
+             "start": 18,
+             "end": 20
+           },
+           "arguments": [
+             {
+               "text": "警员",
+               "start": 20,
+               "end": 22,
+               "entity_type": "人物",
+               "role": "受害者"
+             },
+             {
+               "text": "激进示威者",
+               "start": 10,
+               "end": 15,
+               "entity_type": "人物",
+               "role": "攻击者"
+             }
+           ]
+         }
+       ]
+     },
+   ]
+   ```
+   put the data into
+   ```
+   ./data/
+      --train.json
+      --dev.json
+      --test.json
+   ```
 3. Add your trigger and argument category in the file ./const.py
 
 4. Design question templates based on your event trigger and argument in ./question.csv
 
-for example
-```
-   ##事件类型,事件角色,设计的问题##
-   冲突：冲击,攻击者,谁发起了这次攻击事件？
-```
+   for example
+   ```
+      ##事件类型,事件角色,设计的问题##
+      冲突：冲击,攻击者,谁发起了这次攻击事件？
+   ```
 
 ## Usage
 
