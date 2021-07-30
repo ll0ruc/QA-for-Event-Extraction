@@ -57,18 +57,19 @@ A question answering method for Event Extraction on your own Chinese dataset (Al
 put the data into
 ```
 ./data/
-   train.json
-   dev.json
-   test.json
+   --train.json
+   --dev.json
+   --test.json
 ```
 3. Add your trigger and argument category in the file ./const.py
 
 4. Design question templates based on your event trigger and argument in ./question.csv
-  for example
-  ```
-      事件类型,事件角色,设计的问题
-      冲突：冲击,攻击者,谁发起了这次攻击事件？
-    ```
+
+for example
+```
+   事件类型,事件角色,设计的问题
+   冲突：冲击,攻击者,谁发起了这次攻击事件？
+```
 
 ## Usage
 
