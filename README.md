@@ -79,11 +79,13 @@ Run:
 sudo python qa-trigger.py
 ``` 
 - Then you can get the "trigger_model.pt" in main directory.
+- You can get Precision/Recall/F1 on event trigger extraction.
 
 ```bash
 sudo python qa-argument.py
 ``` 
 - Then you can get the "argument_model.pt" in main directory.
+- You can get Precision/Recall/F1 on event argument extraction.
 
 
 ### Reference
