@@ -54,13 +54,12 @@ A question answering method for Event Extraction on your own Chinese dataset (Al
 ]
 
 ```
-put the data into in 
-   ```
-      ./data/
-         train.json
-         dev.json
-         test.json
-    ```
+put the data into
+```
+./data/
+   train.json
+   dev.json
+   test.json
 
 3. Add your trigger and argument category in the file ./const.py
 
