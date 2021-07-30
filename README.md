@@ -14,7 +14,7 @@ A question answering method for Event Extraction on your own Chinese dataset (Al
    
    Then put these file in 
    ```
-   ./Bert-base-chinese
+   ./bert-base-chinese
       --bert_config.json
       --pytorch_model.bin
       --vocab.txt
